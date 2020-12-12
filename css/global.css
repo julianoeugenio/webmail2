@@ -1,0 +1,1619 @@
+﻿/**
+ * Global, usado em todas as páginas: Barra, menu, textos...
+ ****************************************************************************************************
+ */
+
+/* Reset ---- */
+@import "reset.css";
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#333;
+    background-color:#fff;
+    padding:62px 0 0 0;
+}
+
+.clear{
+    clear:both;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+
+.coluna{
+    float:left;
+}
+
+img{
+    max-width:100%;
+}
+
+/**
+ * Topo
+ ****************************************************************************************************
+ */
+
+#topo{
+    width:100%;
+    min-height:62px;
+    position:fixed;
+    z-index:99999;
+    top:0;
+    background-color:#fff;
+    /*border-bottom:1px solid #ff9944*/
+}
+
+/**
+ * Barra
+ ****************************************************************************************************
+ */
+#barra{
+    width:100%;
+    height:31px;
+    margin:0 0 0 0;
+
+    background: #ff8000; /* Old browsers */
+    /*
+    background: -moz-linear-gradient(top,  #f9a664 0%, #f26d00 100%); /* FF3.6+ * /
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9a664), color-stop(100%,#f26d00)); /* Chrome,Safari4+ * /
+    background: -webkit-linear-gradient(top,  #f9a664 0%,#f26d00 100%); /* Chrome10+,Safari5.1+ * /
+    background: -o-linear-gradient(top,  #f9a664 0%,#f26d00 100%); /* Opera 11.10+ * /
+    background: -ms-linear-gradient(top,  #f9a664 0%,#f26d00 100%); /* IE10+ * /
+    background: linear-gradient(to bottom,  #f9a664 0%,#f26d00 100%); /* W3C * /
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9a664', endColorstr='#f26d00',GradientType=0 ); /* IE6-9 */
+    /*border-bottom:2px solid #fff;* /
+    */
+    text-shadow:none;
+
+}
+
+#barra_user{
+    width:30%;
+    height:31px;
+    float:left;
+}
+
+#barra_user div{
+    height:25px;
+    margin:0 0 0 15px;
+    padding:6px 0 0 30px;
+    color:#fff;
+    background:url(../img/siga/user_icone.png) 0 3px no-repeat;
+}
+
+#barra_sistema{
+    width:30%;
+    height:26px;
+    padding:5px 0 0 20%;
+    float:left;
+    color:#fff;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+}
+
+#barra_right{
+    width:90%;
+    height:31px;
+    float:left;
+    text-align:right;
+}
+
+#barra_right a{
+    height:25px;
+    margin:0 15px 0 0;
+    padding:6px 0 0 0;
+    display:inline-block;
+    color:#fff;
+    font-weight:bold;
+    text-align:right;
+}
+
+#barra_right a:hover{
+    color:#333;
+}
+
+#cronometro{
+    height:25px;
+    margin:0 15px 0 0;
+    padding:6px 0 0 0;
+    display:inline-block;
+    color:#333;
+    font-weight:bold;
+    text-align:right;
+}
+
+#open_chamado{
+    width:16px;
+    height:16px;
+    margin:8px 8px 0 0 !important;
+    background:url(../img/siga/chamados.png) 0 0 no-repeat;
+}
+
+.open_agenda{
+    width:36px;
+    height:16px;
+    margin: 2px -1px 0 0 !important;
+    background:url(../img/siga/agenda_b.png) 0 0 no-repeat;
+}
+
+.open_agenda_piscando{
+    width:36px;
+    height:16px;
+    margin: 2px -1px 0 0 !important;
+    background:url(../img/siga/agenda.gif) 0 0 no-repeat;
+}
+
+.chamado_lista{
+    width:16px;
+    height:16px;
+    margin:8px 8px 0 0 !important;
+    background:url(../img/siga/chamado_lista.png) 0 0 no-repeat;
+}
+
+.chamado_lista_pend{
+    width:16px;
+    height:16px;
+    margin:8px 8px 0 0 !important;
+    background:url(../img/siga/chamado_lista_pend.gif) 0 0 no-repeat;
+}
+
+.chamado_lista_pend2{
+    width:16px;
+    height:16px;
+    margin:8px 8px 0 0 !important;
+    background:url(../img/siga/chamado_lista_pend2.gif) 0 0 no-repeat;
+}
+
+.atendimento_lista_pend{
+    width:16px !important;
+    height:16px !important;
+    margin:8px 8px 0 0 !important;
+    background:url(../img/siga/atendimento_lista_pend.gif) 0 0 no-repeat;
+}
+
+.atendimento_lista_pend2{
+    width:16px;
+    height:16px;
+    margin:8px 8px 0 0 !important;
+    background:url(../img/siga/atendimento_lista_pend2.gif) 0 0 no-repeat;
+}
+
+/**
+ * Menu
+ ****************************************************************************************************
+ */
+.menu_no_link{
+    cursor:default;
+    font-size: 12px;
+}
+
+#box_menu{
+    width:100%;
+    border-bottom:1px solid #000;
+    background-color:#600;
+}
+
+#menu{
+    width:1200px;/*anterior 302 = 151 cada*/
+    height:30px;
+    margin: 0 auto auto 100px;
+}
+
+/**
+ * Carregando
+ ****************************************************************************************************
+ */
+#box_carregando{
+    width:190px;
+    height:20px;
+    margin:5px 0 0 -93px;
+    padding:3px 0 0 5px;
+    border:1px solid #000;
+    position:fixed;
+    left:50%;
+    background-color:#fff;
+    z-index:9999;
+    display:none;
+
+}
+
+#carregando_left{
+    width:80px;
+    height:12px;
+    padding:2px 0 6px 0;
+    float:left;
+}
+
+#carregando_right{
+    width:100px;
+    height:20px;
+    margin:0 0 0 10px;
+    padding:0;
+    float:left;
+    font-weight:bold;
+}
+
+/* ---------- Mega Drop Down --------- */
+#mega_menu {
+    width:1250px;/*anterior 302 = 151 cada*/
+    margin:0 auto 0 auto;
+    list-style:none;
+    font-weight:bold;
+    height:30px;
+    /*margin:60px -1px 0 0;*/
+}
+
+#mega_menu li {
+border-right: 1px solid #777;
+    border-left: 1px solid #777;
+    /* margin-top: -1px; */
+    float: left;
+    width: auto;
+    text-align: center;
+    position: relative;
+    font-size: 11px;
+    font-weight: 100;
+} 
+
+#mega_menu li:hover {
+    background:#fff;
+    border-bottom:0; /* border-bottom:0; and padding-bottom:1px; keeps <li> and <div> connected */
+    padding:3px 0 1px 0;
+    margin-top:-3px;
+    z-index:1; /* shadow above adjacent li */
+    box-shadow:0 1px 8px #000;
+    border-radius:4px 4px 0 0 ;
+}
+
+#mega_menu a {
+    color:#fff;
+    outline:0;
+    text-decoration:none;
+    display:block;
+    line-height:29px;
+    padding: 2px 9px 0px 9px;
+}
+
+#mega_menu li:hover a { /* hide top shadow on div */
+    background:#fff;
+    color:#333;
+    padding-bottom:10px;
+    margin-bottom:-10px;
+    position:relative;
+    z-index:1;
+}
+
+#mega_menu div {
+    width:350px;
+    position:absolute;
+    left:-999em;
+    margin-top:1px;
+    padding:0 10px 10px;
+    border:1px solid #000;
+    border-top:0;
+    font-weight:normal;
+    text-align:left;
+    background:#fff;
+}
+
+#mega_menu li:hover div {
+    left:-1px;
+    top:auto;
+    box-shadow:0 2px 8px #000;
+    border-radius:0 0 6px 6px;
+}
+
+#mega_menu li.dif:hover div {
+    left:-221px;
+}
+/* -------- CSS3 Transform FadeIn ------- */
+/*
+@-moz-keyframes fadeIn {0%{opacity:.1;}100%{opacity:1;}}
+@-webkit-keyframes fadeIn {0%{opacity:.1;}100%{opacity:1;}}
+@-ms-keyframes fadeIn {0%{opacity:.1;}100%{opacity:1;}}
+@keyframes fadeIn {0%{opacity:.1;}100%{opacity:1;}}
+*/
+/*
+#mega_menu li:hover {
+-moz-animation:fadeIn .75s ease-in-out; 
+-webkit-animation:fadeIn .75s ease-in-out; 
+-o-animation:fadeIn .75s ease-in-out; 
+-ms-animation:fadeIn .75s ease-in-out; 
+animation:fadeIn .75s ease-in-out; 
+}
+#mega_menu li:hover div {
+-moz-animation:fadeIn .5s ease-in-out; 
+-webkit-animation:fadeIn .5s ease-in-out; 
+-o-animation:fadeIn .5s ease-in-out; 
+-ms-animation:fadeIn .5s ease-in-out; 
+animation:fadeIn .5s ease-in-out; 
+}
+*/
+
+/* --------- Within Div Styles --------- */
+#mega_menu div h2 {
+    width:320px;
+    margin:10px 0 5px 10px;
+    padding:0;
+    border-bottom:1px solid #c9c9c9;
+    color:#ff9944;
+    font-size:1em;
+    clear:both;
+    float:left;
+}
+
+#mega_menu div p {
+    float:left;
+    width:200px;
+    margin:0 0 0 10px;
+}
+
+#mega_menu div p a {
+    margin:0 0 5px 0 !important;
+    padding:0 !important;
+    display:block;
+    float:left;
+    clear:left;
+    line-height:1.4;
+    color:#333;
+}
+
+#mega_menu div a:hover, #mega_menu div a:focus, #mega_menu div a:active {
+    color:#999;
+}
+
+/**
+ * Status
+ ****************************************************************************************************
+ */
+#box_status_ok{
+    width:auto;
+    min-height:1px;
+    margin:0 0 10px 0;
+    padding:10px 20px 20px 10px;
+    background-color:#dffad3;
+    border:1px solid #72cb67;
+}
+
+.msg_ok_link{
+    color:#FF8000;
+    font-weight:bold;
+}
+
+#box_status_ok #status{
+    width:auto;
+    min-height:20px;
+    padding:3px 0 0 30px;
+    background:url(../img/siga/status_ok.png) 0 0 no-repeat;
+}
+
+#box_status_erro{
+    width:auto;
+    min-height:1px;
+    margin:0 0 10px 0;
+    padding:10px 20px 20px 10px;
+    background-color:#fae2e3;
+    border:1px solid #ec9b9b;
+}
+
+#box_status_erro #status{
+    width:auto;
+    min-height:20px;
+    padding:3px 0 0 30px;
+    background:url(../img/siga/status_erro.png) 0 1px no-repeat;
+}
+
+#box_status_aviso{
+    width:auto;
+    min-height:1px;
+    margin:0 0 10px 0;
+    padding:10px 20px 7px 10px;
+    background-color:#fffac6;
+    border:1px solid #febe01;
+}
+
+#box_status_aviso #status{
+    width:auto;
+    min-height:20px;
+    padding:3px 0 0 30px;
+    background:url(../img/siga/status_aviso.png) 0 1px no-repeat;
+}
+
+
+#status_close{
+    width:16px;
+    height:16px;
+    margin:3px 20px 0 0;
+    display:block;
+    background:url(../img/siga/status_close.png) 0 0 no-repeat;
+    position:absolute;
+    right:10px;
+}
+
+/**
+ * Corpo
+ ****************************************************************************************************
+ */
+#principal{
+    min-width:980px;
+    min-height:600px;
+    margin:10px0 10px;
+    padding:10px;
+    border-radius: 10px;
+    background-color:#fff;
+}
+
+#acesso_negado{
+    text-align:center;
+}
+
+/**
+ * Textos
+ ****************************************************************************************************
+ */
+.h1{
+    font-size:20px;
+    font-weight:bold;
+    margin:0 0 20px 0;
+}
+
+.h2{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.h3{
+    font-size:16px;
+    font-weight:bold;
+}
+
+.erro_1{
+    color:#F00
+}
+
+.erro_2{
+    color:#900
+}
+
+/**
+ * Permissões
+ ****************************************************************************************************
+ */
+#sem_permissao{
+    color:#F00;
+}
+
+/**
+ * Formulário
+ ****************************************************************************************************
+ */
+.label{
+    height:15px;
+    padding:6px 0 6px 0;
+    background-color:#fff;
+    color:#333;
+    display:inline-block;
+    font-weight:bold;
+}
+
+.campo{
+    height:15px;
+    padding:5px;
+    border:1px solid #ccc;
+    background-color:#fff;
+    color:#333;
+}
+
+.botao{
+    height:27px;
+    padding:5px 10px;
+    background-color:#fff;
+    color:#ff9944;
+    border:1px solid #ff9944;
+}
+
+.botao:hover{
+    background-color:#ff9944;
+    color:#fff;
+    border:1px solid #ff9944;
+    cursor:pointer;
+}
+
+/**
+ * L3 - Layout 3 (topo, menu, área de trabalho)
+ ****************************************************************************************************
+ */
+#L3_box{
+    width:auto;
+}
+
+#L3_topo{
+    width:auto;
+    margin:10px;
+    padding:10px 0;
+}
+
+#L3_left{
+    width:200px;
+    min-height:1000px;
+    position:absolute;
+    margin:10px;
+    padding:10px;
+    border:1px solid #999;
+    box-shadow:0 1px 8px #999;
+    border-radius:4px
+}
+
+#L3_left .titulo{
+    width:auto;
+    font-size:18px;
+    font-weight:bold;
+    color:#999;
+}
+
+#L3_right{
+    min-width:750px;
+    min-height:1000px;
+    margin:10px 0 0 250px;
+    position:absolute;
+}
+
+/**
+ * Box Pesquisa
+ ****************************************************************************************************
+ */
+#mask{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background:url(../img/siga/pesquisa/mask.png) 0 0 repeat;
+    display:none;
+}
+
+#mask_sub{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9001;
+    /*background:url(../img/siga/pesquisa/mask.png) 0 0 repeat;*/
+    display:none;
+}
+
+#boxes .box_pesquisa{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9999;
+    border:19px;
+    border-image:url(../img/siga/pesquisa/borda_cinza.png) 20 / 20px round;
+    background-color:transparent;
+    display:none;
+}
+
+#boxes .close{
+    width:30px;
+    height:30px;
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    display:block;
+    background:url(../img/siga/pesquisa/fechar_preto.png) 0 0 no-repeat;
+}
+
+#boxes_sub .box_pesquisa_sub {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9999;
+    border:19px;
+    border-image:url(../img/siga/pesquisa/borda_cinza.png) 20 / 20px round;
+    background-color:transparent;
+    display:none;
+}
+
+#boxes_sub .close_sub{
+    width:30px;
+    height:30px;
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    display:block;
+    background:url(../img/siga/pesquisa/fechar_preto.png) 0 0 no-repeat;
+}
+
+#box_pesquisa_corpo{
+    /*
+    width:800px;
+    height:600px;
+    */
+    padding:30px 10px;
+
+    background-color:#fff;
+}
+
+#box_pesquisa_corpo .titulo{
+    padding:5px 0;
+    text-align:center;
+    color:#ff8000;
+    font-weight:bold;
+    background-color:#FFC
+}
+
+#box_pesquisa_corpo .sub_titulo{
+    width:100%;
+    height:17px;
+    margin:0 0 10px -10px;
+    padding:7px 10px 5px 10px;
+    display:inline-block;
+    float:left;
+    font-size:12px;
+    font-weight:bold;
+    color:#ff8000;
+    background-color:#FFC
+}
+
+#box_pesquisa_corpo .coluna_1{
+    width:170px;
+    height:30px;
+    float:left;
+}
+
+#box_pesquisa_corpo .coluna_2{
+    width:400px;
+    height:30px;
+    float:left;
+}
+
+#box_pesquisa_corpo .coluna_3{
+    width:230px;
+    height:30px;
+    padding:0 0 0 0;
+    float:left;
+}
+
+#box_pesquisa_corpo form .bt_pesquisar{
+    width:60px;
+    height:17px;
+    margin:0 10px 0 0;
+    padding:5px 12px 5px 35px;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_ver.png) 10px 5px no-repeat;
+    color:#333;
+    display:block;
+    float:right;
+}
+
+#box_pesquisa_corpo form .bt_pesquisar:hover{
+    color:#000;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+#box_pesquisa_corpo form .bt_todos{
+    width:60px;
+    height:17px;
+    margin:0 0 0 0;
+    padding:5px 12px 5px 35px;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_ver.png) 10px 5px no-repeat;
+    color:#333;
+    display:block;
+    float:right;
+}
+
+#box_pesquisa_corpo form .bt_todos:hover{
+    color:#000;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+#box_pesquisa_corpo form .label{
+    height:24px;
+    padding:6px 0 0 0;
+    font-size:12px;
+    font-weight:bold;
+}
+
+#box_pesquisa_corpo form input[type="text"]{
+    width:370px;
+    height:17px;
+    margin:0 0 10px 0;
+    padding:5px 5px 5px 5px;
+    float:left;
+    border:1px solid #ccc;
+    font-size:12px;
+    color:#777;
+}
+
+#box_pesquisa_corpo form .box_select{
+    height: 27px;
+    margin:0 0 10px 0;
+    float:left;
+    overflow: hidden;
+    background: url(../img/siga/procura-se-select-seta.png) no-repeat right;
+    border: 1px solid #ccc;
+}
+
+#box_pesquisa_corpo form .box_select select{
+    height: 25px;
+    margin:0;
+    padding:3px 0 3px 0;
+    background: transparent;
+    font-size: 12px;
+    color:#777;
+    line-height:1;
+    border-radius:0;
+    -webkit-appearance: none;
+}
+
+#box_pesquisa_corpo_sub{
+
+    width:800px;
+    height:600px;
+
+    padding:30px 10px;
+    background-color:#fff;
+}
+
+#box_pesquisa_corpo_sub .titulo{
+    padding:5px 0;
+    text-align:center;
+    color:#ff8000;
+    font-weight:bold;
+    background-color:#FFC
+}
+
+#box_pesquisa_corpo_sub .sub_titulo{
+    width:100%;
+    height:17px;
+    margin:0 0 10px -10px;
+    padding:7px 10px 5px 10px;
+    display:inline-block;
+    float:left;
+    font-size:12px;
+    font-weight:bold;
+    color:#ff8000;
+    background-color:#FFC
+}
+
+#box_pesquisa_corpo_sub .coluna_1{
+    width:170px;
+    height:30px;
+    float:left;
+}
+
+#box_pesquisa_corpo_sub .coluna_2{
+    width:400px;
+    height:30px;
+    float:left;
+}
+
+#box_pesquisa_corpo_sub .coluna_3{
+    width:230px;
+    height:30px;
+    padding:0 0 0 0;
+    float:left;
+}
+
+#box_pesquisa_corpo_sub form .bt_pesquisar{
+    width:60px;
+    height:17px;
+    margin:0 10px 0 0;
+    padding:5px 12px 5px 35px;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_ver.png) 10px 5px no-repeat;
+    color:#333;
+    display:block;
+    float:right;
+}
+
+#box_pesquisa_corpo_sub form .bt_pesquisar:hover{
+    color:#000;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+#box_pesquisa_corpo_sub form .bt_todos{
+    width:60px;
+    height:17px;
+    margin:0 0 0 0;
+    padding:5px 12px 5px 35px;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_ver.png) 10px 5px no-repeat;
+    color:#333;
+    display:block;
+    float:right;
+}
+
+#box_pesquisa_corpo_sub form .bt_todos:hover{
+    color:#000;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+#box_pesquisa_corpo_sub form .label{
+    height:24px;
+    padding:6px 0 0 0;
+    font-size:12px;
+    font-weight:bold;
+}
+
+#box_pesquisa_corpo_sub form input[type="text"]{
+    width:370px;
+    height:17px;
+    margin:0 0 10px 0;
+    padding:5px 5px 5px 5px;
+    float:left;
+    border:1px solid #ccc;
+    font-size:12px;
+    color:#777;
+}
+
+#box_pesquisa_corpo_sub form .box_select{
+    height: 27px;
+    margin:0 0 10px 0;
+    float:left;
+    overflow: hidden;
+    background: url(../img/siga/procura-se-select-seta.png) no-repeat right;
+    border: 1px solid #ccc;
+}
+#box_pesquisa_corpo_sub form .box_select select{
+    height: 25px;
+    margin:0;
+    padding:3px 0 3px 0;
+    background: transparent;
+    font-size: 12px;
+    color:#777;
+    line-height:1;
+    border-radius:0;
+    -webkit-appearance: none;
+}
+
+.box_pesquisa_resultado{
+    height:500px;
+    overflow:scroll;
+
+}
+
+.grid_bt_imprimir{
+    width:auto;
+    height:15px;
+    margin:-5px 10px 0 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_imprimir.png) 10px 5px no-repeat #fff;
+    color:#333;
+
+}
+.grid_bt_imprimir:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_voltar{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_voltar.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+.grid_bt_voltar:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_finalizar{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_finalizar.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+.grid_bt_finalizar:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_responder{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_responder.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+.grid_bt_responder:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_encaminhar{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_encaminhar.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+.grid_bt_encaminhar:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_limpar{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_limpar.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+.grid_bt_limpar:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_pendente{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_pendente.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+.grid_bt_pendente:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_edicao{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_edicao.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+.grid_bt_edicao:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_enviar{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_edicao.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+.grid_bt_enviar:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_procurar{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_ver.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+.grid_bt_procurar:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+
+.grid_bt_engrenagem{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_engrenagem.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+.grid_bt_engrenagem:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_atendimento{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_atendimento.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+.grid_bt_atendimento:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_desativar_feed{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid cornflowerblue;
+    background:url(../img/siga/grid_bt_desativar_feed.png) 10px 5px no-repeat;
+    color:cornflowerblue;
+
+}
+.grid_bt_desativar_feed:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:cornflowerblue;
+}
+
+.grid_bt_transf_feed{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid cornflowerblue;
+    background:url(../img/siga/grid_bt_transf_feed.png) 10px 5px no-repeat;
+    color:cornflowerblue;
+
+}
+
+.grid_bt_transf_feed:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:cornflowerblue;
+}
+
+.grid_bt_transf_atend{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #febe01;
+    background:url(../img/siga/grid_bt_transf_feed.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+
+.grid_bt_transf_atend:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#febe01;
+}
+
+.grid_bt_excluir_feed{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid cornflowerblue;
+    background:url(../img/siga/grid_bt_desativar_feed.png) 10px 5px no-repeat;
+    color:cornflowerblue;
+
+}
+
+.grid_bt_excluir_feed:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:cornflowerblue;
+}
+
+.grid_bt_atribuir_label_feed{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid cornflowerblue;
+    background:url(../img/siga/icone_bt_gerenciar_label.png) 10px 5px no-repeat;
+    color:cornflowerblue;
+
+}
+
+.grid_bt_atribuir_label_feed:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:cornflowerblue;
+}
+
+.grid_bt_grid_bt_nova_ocorrencia{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid cornflowerblue;
+    background:url(../img/siga/grid_bt_grid_bt_nova_ocorrencia.png) 10px 5px no-repeat;
+    color:cornflowerblue;
+
+}
+
+.grid_bt_grid_bt_nova_ocorrencia:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:cornflowerblue;
+}
+
+.grid_bt_desativar{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_desativar.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+.grid_bt_atv{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/bt_ativar.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+
+.grid_bt_dsv{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_desativar.png) 10px 5px no-repeat;
+    color:#333;
+
+}
+
+.grid_bt_desativar:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_add{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_add.png) 10px 5px no-repeat;
+    color:#333;
+}
+
+.grid_bt_add:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_mostrar_mais{
+    width:auto;
+    height:15px;
+    margin:0 10px 10px 0;
+    padding:5px 12px 5px 35px;
+    display:inline-block;
+    border:1px solid #598c52;
+    background:url(../img/siga/grid_bt_add.png) 10px 5px no-repeat;
+    color:#333;
+}
+
+.grid_bt_mostrar_mais:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#98ce89
+}
+
+.grid_bt_bairros_mais{
+    width:16px;
+    height:16px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_adicionar.png) no-repeat;
+}
+
+.grid_bt_bairros_menos{
+    width:16px;
+    height:16px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_del.png) no-repeat;
+}
+
+.grid_bt_mundo_on{
+    width:16px;
+    height:16px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/mundo_on.png) no-repeat;
+}
+
+.grid_bt_mundo_off{
+    width:16px;
+    height:16px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/mundo_off.png) no-repeat;
+}
+
+
+.grid_bt_limpar_campo{
+    width:16px;
+    height:16px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_limpar.png) no-repeat;
+}
+
+
+.grid_bt_minimizar{
+    width:16px;
+    height:16px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_minimizar.png) no-repeat;
+}
+
+.grid_bt_msg_relacionados{
+    width:16px;
+    height:16px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/chamados.png) no-repeat;
+}
+
+.grid_bt_excluir_bairro_feed{
+    width:32px;
+    height:32px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_excluir_bairro_feed.png) no-repeat;
+}
+
+.grid_bt_excluir_cond_feed{
+    width:32px;
+    height:32px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_excluir_cond_feed.png) no-repeat;
+}
+.grid_bt_excluir_imovel_feed{
+    width:32px;
+    height:32px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_excluir_imovel_feed.png) no-repeat;
+}
+.grid_bt_email{
+    width:30px;
+    height:30px;
+    margin:0 2px 0 0;
+    padding:0 2px 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_email.png) no-repeat;
+}
+.grid_bt_favoritos_feed{
+    width:32px;
+    height:32px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_favoritos_feed.png) no-repeat;
+}
+
+.grid_bt_add_imovel{
+    width:32px;
+    height:32px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_add_imovel_feed.png) no-repeat;
+}
+
+.grid_bt_editar_{
+    width:16px;
+    height:16px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_atendimento.png) no-repeat;
+}
+
+
+.grid_bt_x_apagar{
+    width:16px;
+    height:16px;
+    margin:2px 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_cancelar.png) no-repeat;
+}
+
+.grid_bt_historicos{
+    width:16px;
+    height:16px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/bt_info_all.png) no-repeat;
+}
+
+.grid_bt_condominios_mais{
+    width:16px;
+    height:16px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:inline-block;
+    background:url(../img/siga/grid_bt_adicionar.png) no-repeat;
+}
+
+.girar_left{
+    width:16px;
+    height:16px;
+    margin:0 5px;
+    display:inline-block;
+    background:url(../img/siga/bt_girar_left.png) 0 0 no-repeat;
+}
+
+.girar_right{
+    width:16px;
+    height:16px;
+    margin:0 5px;
+    display:inline-block;
+    background:url(../img/siga/bt_girar_right.png) 0 0 no-repeat;
+}
+
+/*Propriedades*/
+.esconder{
+    display:none !important;
+}
+
+#chamados_relacionados{
+    width:auto;
+    height:20px;
+    margin:10px 0 0 0;
+    padding:0 0 0 25px;
+    display:block;
+    background:url(../img/siga/chamado.png) 0 0 no-repeat;
+    color:#333;
+}
+#chamados_relacionados:hover{
+    color:#ff8000;
+}
+
+/*Novo Menu*/
+
+
+$background--color:#1e2023;
+$icon--color:#1e2023;
+$font--color:#ffffff;
+$font--color--active:#000000;
+$font--primary:'Fira Sans', sans-serif;
+$transition--length: .5;
+
+body{
+    background-color: $background--color;
+    font-family: $font--primary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.site-content{
+    max-width: 1100px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__headline{
+        font-weight: 200;
+        color: $font--color;
+        font-size: calc(2vw + 10px);
+    }
+}
+
+//default state
+.menu-icon{
+    $size: 30px;
+    height: $size;
+    width: $size;
+    position: fixed;
+    z-index:2;
+    left: 50px;
+    top: 30px;
+    cursor: pointer;
+    &__line{
+        height: 2px;
+        width: $size;
+        display: block;
+        background-color: $font--color;
+        margin-bottom: 4px;
+        transition: transform .2s ease, background-color .5s ease;
+    }
+    &__line-left{
+        width: $size / 2;
+    }
+    &__line-right{
+        width: $size / 2;
+        float: right;
+    }
+}
+
+.nav{
+    $width: 100vw;
+    $height: 100vh;
+    $font--size--calc: calc(2vw + 10px);
+    $transition--easing: cubic-bezier(.77,0,.175,1);
+    position: fixed;
+    z-index:1;
+    &:before,&:after{
+        content: "";
+        position: fixed;
+        width:$width;
+        height:$height;
+        background: rgba(#eaeaea, .2);
+        z-index: -1;
+        transition: transform $transition--easing $transition--length + s;
+        transform: translateX(0%) translateY(-100%);
+    }
+    &:after{
+        background: rgba(#ffffff, 1);
+        transition-delay: 0s;
+    }
+    &:before{
+        transition-delay: .1s;
+    }
+    &__content{
+        position: fixed;
+        top:50%;
+        transform: translate(0%,-50%);
+        width: 100%;
+        text-align: center;
+        font-size: $font--size--calc;
+        font-weight: 200;
+        cursor: pointer;
+    }
+    &__list-item{
+        position: relative;
+        display: inline-block;
+        transition-delay: $transition--length + s;
+        opacity: 0;
+        transform: translate(0%, 100%);
+        transition: opacity .2s ease, transform .3s ease;
+        margin-right: 25px;
+        &:before{
+            content: "";
+            position: absolute;
+            background: $font--color--active;
+            width: 20px;
+            height: 1px;
+            top: 100%;
+            transform: translate(0%, 0%);
+            transition: all .3s ease;
+            z-index: -1;
+        }
+        &:hover{
+            &:before{
+                width: 100%;
+            }
+        }
+    }
+}
+
+//active state
+body.nav-active{
+    $menu--items--count: 4;
+    .menu-icon{
+        &__line{
+            background-color: #000;
+            transform: translateX(0px) rotate(-45deg);
+        }
+        &__line-left{
+            transform: translateX(1px) rotate(45deg);
+        }
+        &__line-right{
+            transform: translateX(-2px) rotate(45deg);
+        }
+    }
+    .nav{
+        visibility:visible;
+        &:before,&:after{
+            transform: translateX(0%) translateY(0%);
+        }
+        &:after{
+            transition-delay: .1s;
+        }
+        &:before{
+            transition-delay: 0s;
+        }
+        &__list-item{
+            opacity: 1;
+            transform: translateX(0%);
+            transition: opacity .3s ease, transform .3s ease, color .3s ease;
+            @for $i from 0 through $menu--items--count {
+                &:nth-child(#{$i}){
+                    transition-delay: $transition--length * $i / 8 + .5 + s;
+                }
+            }
+        }
+    }
+}

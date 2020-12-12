@@ -1,0 +1,68 @@
+.showbox_txtcorpo_confirm{
+    color: #3CB371;
+    text-align: center;
+    font-size:25px;
+    font-weight: bold;
+}
+.showbox_txtcorpo_erro{
+    color: #DC143C;
+    text-align: center;
+    font-size:25px;
+    font-weight: bold;
+}
+.showbox_txtcorpo_info{
+    color: #1E90FF;
+    text-align: center;
+    font-size:25px;
+    font-weight: bold;
+}
+
+.showbox_txttitulo_info{
+    text-align: center;
+    font-size:32px;
+    font-weight: bold;
+}
+
+.bt_showbox_confirm_sim{
+
+    border:1px solid #3CB371;
+    font-weight: bold;
+    color:#3CB371;
+
+}
+.bt_showbox_confirm_sim:hover{
+    color:#fff;
+    border:1px solid #598c52;
+    background-color:#3CB371;
+    font-weight: bold;
+}
+
+.bt_showbox_confirm_nao{
+
+    border:1px solid #FF6347;
+    font-weight: bold;
+    color:#FF6347;
+
+}
+.bt_showbox_confirm_nao:hover{
+    color:#fff;
+    border:1px solid #FF6347;
+    background-color:#FF6347;
+    font-weight: bold;
+}
+
+.bt_showbox_login{
+
+    border:1px solid #B2B2B2;
+    font-weight: bold;
+    color:#B2B2B2;
+
+}
+.bt_showbox_login:hover{
+    color:#fff;
+    border:1px solid #B2B2B2;
+    background-color:#B2B2B2;
+    font-weight: bold;
+}
+
+

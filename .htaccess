@@ -1,0 +1,18 @@
+
+#Bloquear o arquivo .htaccess contra acesso pela URL
+<Files ~ "^\.(htaccess|htpasswd)$">
+  deny from all
+</Files>
+
+#Não aplica em arquivos acessados diretamente (-f) e nem em pastas (-d)
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule . index.php [L]
+RewriteRule ^(.+)\.pdf$ index.php
+
+Options -Indexes
+
+php_value post_max_size 35M
+php_value upload_max_filesize 35M
